@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Coleção da Sorte</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="images/logo.png" alt="logotipo colecao da sorte" srcset="">
-            </div>
-            <div class="search-bar">
-                <input placeholder="O que você procura?" type="text">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li> <a href="#">Início</a></li>
-                    <li> <a href="#">Sorteios</a></li>
-                    <li> <a href="#">Encerrados</a></li>
-                    <li> <a href="#">Sobre</a></li>
-                </ul>
-            </div>
-            <div class="nav-btn">
-                <button class="entrar-btn">Entrar</button>
-            </div>
+      <div class="nav-bar">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="logotipo colecao da sorte"
+            srcset=""
+          />
         </div>
+        <div class="search-bar">
+          <input placeholder="O que você procura?" type="text" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sorteios">Sorteios</a></li>
+            <li><a href="#submita">Submita</a></li>
+            <li><a href="#encerrados">Encerrados</a></li>
+            <!-- <li> <a href="#">Sobre</a></li> -->
+          </ul>
+        </div>
+        <div class="nav-btn">
+          <button class="entrar-btn">Entrar</button>
+        </div>
+      </div>
     </header>
 
+    <section class="top-section">
+      <div class="inicio" id="inicio">
+        <div class="text-inicio">
+          <h2>Olá! Seja bem vindo!</h2>
+          <p>
+            O Coleção da Sorte foi feito pra você juntar toda sua sorte nas
+            promoções que andam rolando em território brasileiro! Aqui você pode
+            ver as promoções em aberto, receber notificações de novas e das
+            finalizadas, assim podendo conferir se ganhou e jogar sua nota
+            fiscal fora sem dúvida.
+          </p>
+        </div>
+        <div class="imagem-inicio"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sorteios" id="sorteios"></div>
+    </section>
+
     <script src="sript.js"></script>
-</body>
+  </body>
 </html>
