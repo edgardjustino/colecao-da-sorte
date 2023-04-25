@@ -14,6 +14,10 @@ html {
     scroll-padding-top: 90px;
 }
 
+:root {
+   --dark-green: rgb(19, 92, 19):
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -32,18 +36,19 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 5px 10px;
-    height: 90px;
+    height: 100px;
     width: 100%;
     background: #fff;
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
 }
 
 .logo img {
     /* width: 150px; */
-    height: 90px;
-    margin: 10px 10px;
+    height: 100px;
+    margin: 5px 10px;
 }
 
 .search-bar {
@@ -86,19 +91,45 @@ header {
     cursor: pointer;
 }
 
+.bars {
+    font-size: 2rem;
+    color: var(--dark-green);
+    display: none;
+}
+
+.x-close {
+    font-size: 2.5rem;
+    color: var(--dark-green);
+    display: none;
+}
+
 /* INICIO */
 .inicio {
     background-color: rgb(20, 128, 20);
-    height: 550px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: absolute;
+    top: 80px;
+    width: 100%;
 }
 
 .text-inicio {
-    max-width: 500px;
-    padding: 15px;
+    max-width: 480px;
+    margin: 15px;
     color: white;
+}
+
+.text-inicio h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text-inicio p {
+    font-weight: 500;
+    font-size: 18px;
+    word-wrap: break-word;
 }
 
 /* SORTEIOS */
