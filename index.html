@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="shortcut icon" type="image" href="images/trevo-icon.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Coleção da Sorte</title>
   </head>
@@ -18,11 +19,12 @@
     <header>
       <div class="nav-bar">
         <div class="logo">
-          <img
-            src="images/logo.png"
-            alt="logotipo colecao da sorte"
-            srcset=""
-          />
+          <a href="#inicio"
+            ><img
+              src="images/logo.png"
+              alt="logotipo colecao da sorte"
+              srcset=""
+          /></a>
         </div>
         <div class="search-bar">
           <input placeholder="O que você procura?" type="text" />
@@ -45,7 +47,6 @@
         <i class="bars fa-solid fa-bars"></i>
         <!-- X PARA FECHAR -->
         <i class="x-close fa-solid fa-xmark"></i>
-
       </div>
     </header>
 
@@ -68,9 +69,13 @@
       </div>
     </section>
 
-    <section>
+    <section class="sorteios-sec">
       <div class="sorteios" id="sorteios"></div>
     </section>
+
+    <section class="submita-sec"></section>
+
+    <section class="encerrados-sec"></section>
 
     <script src="sript.js"></script>
   </body>
