@@ -54,6 +54,30 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
+    /* width: 300px; */
+    width: 300px;
+    height: 50px;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.search-bar input {
+    padding: 10px;
+    padding-left: 10px;
+    left: 0px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    /* max-width: 100px; */
+    width: 90%;
+}
+
+.search-bar i{
+    padding: 8px;
+    font-size: 18px;
+    color: var(--dark-green);
 }
 
 .nav-list ul {
