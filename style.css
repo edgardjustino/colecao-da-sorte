@@ -11,7 +11,7 @@ html {
     width: 100%;
     height: 100vh;
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 70px;
 }
 
 :root {
@@ -54,10 +54,9 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     /* width: 300px; */
-    width: 300px;
-    height: 50px;
+    width: 360px;
+    height: 55px;
     border: 1px solid green;
     padding: 5px;
     border-radius: 6px;
@@ -75,9 +74,10 @@ header {
 }
 
 .search-bar i{
-    padding: 8px;
+    padding: 10px;
     font-size: 18px;
     color: var(--dark-green);
+    left: 10px;
 }
 
 .nav-list ul {
@@ -128,6 +128,11 @@ header {
 }
 
 /* INICIO */
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .inicio {
     background-color: rgb(20, 128, 20);
     height: 500px;
@@ -137,6 +142,7 @@ header {
     position: absolute;
     top: 80px;
     width: 100%;
+    position: relative;
 }
 
 .text-inicio {
@@ -157,5 +163,14 @@ header {
 }
 
 /* SORTEIOS */
+.sorteios-sec {
+    height: 800px;
+    background-color: rgb(226, 224, 224);
+}
 
+/* SUBMITA-SEC */
+.submita-sec {
+    height: 700px;
+    background-color: var(--dark-green);
+}
 
