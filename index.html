@@ -21,7 +21,7 @@
         <div class="logo">
           <a href="#inicio"
             ><img
-              src="images/logo.png"
+              src="images/logo2.png"
               alt="logotipo colecao da sorte"
               srcset=""
           /></a>
@@ -30,12 +30,20 @@
           <i class="fa-solid fa-magnifying-glass"></i>
           <input placeholder="O que você procura?" type="text" />
         </div>
-        <div class="nav-list">
-          <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sorteios">Sorteios</a></li>
-            <li><a href="#submita-sec">Submita</a></li>
-            <li><a href="#encerrados">Encerrados</a></li>
+        <div class="nav-menu">
+          <ul class="nav_list">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sorteios" class="nav-link">Sorteios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#submita" class="nav-link">Submita</a>
+            </li>
+            <li class="nav-item">
+              <a href="#encerrados" class="nav-link">Encerrados</a>
+            </li>
             <!-- <li> <a href="#">Sobre</a></li> -->
           </ul>
         </div>
@@ -44,9 +52,13 @@
         </div>
 
         <!-- MENU HAMBURGER -->
-        <i class="bars fa-solid fa-bars"></i>
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bars fa-solid fa-bars"></i>
+        </div>
         <!-- X PARA FECHAR -->
-        <i class="x-close fa-solid fa-xmark"></i>
+        <div class="nav_close" id="nav-close">
+          <i class="x-close fa-solid fa-xmark"></i>
+        </div>
       </div>
     </header>
     <div class="main-container">
@@ -68,14 +80,16 @@
         </div>
       </section>
 
-      <section class="sorteios-sec">
-        <div class="sorteios" id="sorteios"></div>
+      <section class="sorteios-sec" id="sorteios">
+        <div class="sorteios"></div>
       </section>
 
-      <section class="submita-sec"></section>
+      <section class="submita-sec" id="submita"></section>
 
-      <section class="encerrados-sec"></section>
+      <section class="encerrados-sec" id="encerrados"></section>
     </div>
+
+    <footer></footer>
 
     <script src="sript.js"></script>
   </body>
