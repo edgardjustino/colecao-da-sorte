@@ -84,7 +84,7 @@ header {
 
 .nav-menu ul {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     row-gap: 2rem;
     align-items: center;
     justify-content: space-between;
@@ -133,7 +133,8 @@ header {
     font-size: 2rem;
     color: var(--dark-green);
     cursor: pointer;
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: none;
 }
 
 @media screen and (max-width: 767px){
@@ -159,7 +160,7 @@ header {
     right: 1.25rem;
     cursor: pointer;
     z-index: 102;
-    /* display: none; */
+    display: none;
 }
 
 /* INICIO */
@@ -199,14 +200,56 @@ header {
 
 /* SORTEIOS */
 .sorteios-sec {
-    height: 800px;
+    height: 100px;
     background-color: rgb(226, 224, 224);
 }
 
 /* SUBMITA-SEC */
+
 .submita-sec {
-    height: 700px;
     background-color: green;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-bar {
+    display: flex;
+    align-items: center;
+    /* width: 300px; */
+    width: 360px;
+    height: 55px;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.send-bar input {
+    padding: 10px;
+    padding-left: 10px;
+    left: 0px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    /* max-width: 100px; */
+    width: 90%;
+}
+
+.send-btn {
+    padding: 15px 20px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    background: orange;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.send-btn:hover {
+    background: var(--darker-orange);
 }
 
