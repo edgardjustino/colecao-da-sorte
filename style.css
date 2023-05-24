@@ -214,6 +214,7 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 40px;
+    width: 100vw;
 }
 
 #submita-text {
@@ -225,12 +226,15 @@ header {
 .send-bar {
     display: flex;
     align-items: center;
-    /* width: 300px; */
-    width: 360px;
+    justify-content: space-between;
+    min-width: 300px;
+    width: 400px;
     height: 55px;
-    border: 1px solid green;
-    padding: 5px;
+    /* border: 1px solid white; */
+    padding-left: 10px;
     border-radius: 6px;
+    background-color: #fff;
+    /* margin: 20px; */
 }
 
 .send-bar input {
@@ -241,20 +245,21 @@ header {
     border: none;
     outline: none;
     /* max-width: 100px; */
-    width: 90%;
+    width: 70%;
 }
 
 .send-btn {
-    padding: 15px 20px;
+    padding: 20px;
     color: white;
     outline: none;
     border: none;
     font-size: 18px;
-    border-radius: 6px;
+    border-radius: 0 6px 6px 0;
     background: orange;
     font-weight: 500;
     cursor: pointer;
     transition: .3s;
+    height: 55px;
 }
 
 .send-btn:hover {
