@@ -200,8 +200,62 @@ header {
 
 /* SORTEIOS */
 .sorteios-sec {
-    height: 100px;
+    /* height: 100px; */
+    position: relative;
     background-color: rgb(226, 224, 224);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.sorteios-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sorteios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#img-baud-todo-dia {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.promo-card {
+    width: 300px;
+    max-height: 350px;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-box-shadow: 10px 10px 25px -18px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 25px -18px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 25px -18px rgba(0,0,0,0.6);;
+}
+
+.name-and-notif {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ padding: 12px;
+ /* width: 300px; */
+ overflow: hidden;
+}
+
+h3 {
+   max-width: 300px;
+}
+
+.fa-bell {
+font-size: 20px;
+/* padding: 5px; */
 }
 
 /* SUBMITA-SEC */
