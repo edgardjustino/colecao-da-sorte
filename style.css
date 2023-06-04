@@ -229,6 +229,12 @@ header {
     border-radius: 6px 6px 0 0;
 }
 
+.img-card {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
 .promo-card {
     width: 300px;
     max-height: 350px;
@@ -253,8 +259,15 @@ h3 {
    max-width: 300px;
 }
 
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .fa-bell {
 font-size: 20px;
+cursor: pointer;
 /* padding: 5px; */
 }
 
