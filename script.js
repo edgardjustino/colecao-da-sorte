@@ -1,4 +1,4 @@
 function toggleBtn() {
-  const toggleBtn = document.querySelector('.toggle-btn');
-  toggleBtn.classList.toggle('active-toggle');
+  const toggleNav = document.getElementById('nav-toggle');
+  toggleNav.classList.toggle('active-toggle');
 }

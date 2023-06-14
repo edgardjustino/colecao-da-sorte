@@ -134,28 +134,46 @@ header {
     height: 50px;
     width: 50px;
     min-width: 50px;
-    /* background-color: red; */
+    background-color: red;
+    background: transparent;
     cursor: pointer;
     transform-origin: center;
     transition: all .3s ease;
+    outline: none;
+    border: none;
+    z-index: 2000;
 }
 
 .line-btn {
     height: 3px;
-    width: 50px;
-    color: green;
-    margin: 5px auto;
+    width: 40px;
+    background: green;
+    margin: 10px auto;
     display: block;
     position: relative;
 }
 
-.nav_toggle {
+button.active-toggle .line-btn:nth-child(1){
+    transform: translateY(60px) rotate(-70deg);
+}
+
+button.active-toggle .line-btn:nth-child(2){
+    width: 0;
+}
+
+button.active-toggle .line-btn:nth-child(3){
+    transform: translateY(-60px) rotate(70deg);
+}
+
+/* .nav_toggle {
     font-size: 2rem;
     color: var(--dark-green);
     cursor: pointer;
-    /* display: inline-flex; */
+    
     display: none;
-}
+} */
+
+/* display: inline-flex colocar comentado acima; */
 
 @media screen and (max-width: 767px){
     .nav-menu {
