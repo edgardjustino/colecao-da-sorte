@@ -129,6 +129,26 @@ header {
     background: var(--darker-orange);
 }
 
+/* TOGGLE BUTTON 2 */
+.toggle-btn {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    /* background-color: red; */
+    cursor: pointer;
+    transform-origin: center;
+    transition: all .3s ease;
+}
+
+.line-btn {
+    height: 3px;
+    width: 50px;
+    color: green;
+    margin: 5px auto;
+    display: block;
+    position: relative;
+}
+
 .nav_toggle {
     font-size: 2rem;
     color: var(--dark-green);
