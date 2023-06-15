@@ -1,4 +1,8 @@
-function toggleBtn() {
-  const toggleNav = document.getElementById('nav-toggle');
-  toggleNav.classList.toggle('active-toggle');
+function animar() {
+  const hambBtn = document.getElementById('nav-toggle');
+  hambBtn.classList.toggle('active-toggle');
 }
+
+// document.onclick = function (e) {
+//   e.target.id()
+// }
