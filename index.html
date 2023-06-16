@@ -9,8 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image" href="images/trevo-icon.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Coleção da Sorte</title>
@@ -50,24 +49,47 @@
         <div class="nav-btn">
           <button class="entrar-btn">Entrar</button>
         </div>
-
-<!-- MENU TOGGLE -->
-<button onclick="animar()" id="nav-toggle" class="toggle-btn">
-  <span class="line-btn"></span>
-  <span class="line-btn"></span>
-  <span class="line-btn"></span>
-</button>
-
-        <!-- MENU HAMBURGER -->
-        <!-- <div class="nav_toggle" id="nav-toggle">
-          <i class="bars fa-solid fa-bars"></i>
-        </div> -->
-        <!-- X PARA FECHAR -->
-        <!-- <div class="nav_close" id="nav-close">
-          <i class="x-close fa-solid fa-xmark"></i>
-        </div> -->
+        <!-- MENU TOGGLE -->
+        <button onclick="animar()" id="nav-toggle" class="toggle-btn">
+          <span class="line-btn"></span>
+          <span class="line-btn"></span>
+          <span class="line-btn"></span>
+        </button>
       </div>
     </header>
+
+    <!-- ------ MENU RESPONSIVO ------ -->
+<div class="responsive-bar" id="menu-mobile">
+  <div class="search-bar search-bar-mobile">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input placeholder="O que você procura?" type="text" />
+  </div>
+
+  <div class="nav-menu-mobile">
+    <ul class="nav_list">
+      <li class="nav-item">
+        <a href="#inicio" class="nav-link">Início</a>
+      </li>
+      <li class="nav-item">
+        <a href="#sorteios" class="nav-link">Promoções</a>
+      </li>
+      <li class="nav-item">
+        <a href="#submita" class="nav-link">Submita</a>
+      </li>
+      <li class="nav-item">
+        <a href="#encerrados" class="nav-link">Encerrados</a>
+      </li>
+      <!-- <li> <a href="#">Sobre</a></li> -->
+    </ul>
+  </div>
+
+  <div class="nav-btn">
+    <button class="entrar-btn-mobile">Entrar</button>
+  </div>
+</div>
+
+    <!-- ------ MAIN CONTAINER ------ -->
+
     <div class="main-container">
       <section class="top-section">
         <div class="inicio" id="inicio">
