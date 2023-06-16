@@ -15,10 +15,12 @@ html {
 }
 
 :root {
+  --darker-green: rgb(13, 69, 13);
   --dark-green: rgb(19, 92, 19);
   --lighter-green: rgb(8, 148, 8);
   --darker-orange: rgb(223, 148, 11);
   --white: #fff;
+  --light-grey: #f7f7f7;
 }
 
 body {
@@ -81,6 +83,7 @@ header {
   font-size: 18px;
   color: var(--dark-green);
   left: 10px;
+  cursor: pointer;
 }
 
 .nav_list {
@@ -134,7 +137,6 @@ header {
   height: 50px;
   width: 50px;
   min-width: 50px;
-  background-color: red;
   background: transparent;
   cursor: pointer;
   transform-origin: center;
@@ -171,16 +173,6 @@ button.active-toggle .line-btn:nth-child(3) {
   display: none;
 }
 
-/* .nav_toggle {
-    font-size: 2rem;
-    color: var(--dark-green);
-    cursor: pointer;
-    
-    display: none;
-} */
-
-/* display: inline-flex colocar comentado acima; */
-
 @media screen and (max-width: 960px) {
   .toggle-btn {
     display: block;
@@ -208,7 +200,7 @@ button.active-toggle .line-btn:nth-child(3) {
     height: 100vh;
     background-color: var(--white);
     padding: 15px;
-    transition: .4s ease-in;
+    transition: 0.4s ease-in;
     z-index: 99;
   }
 
@@ -219,7 +211,7 @@ button.active-toggle .line-btn:nth-child(3) {
     background-color: #fff;
   }
 
- .nav-menu-mobile {
+  .nav-menu-mobile {
     width: 100%;
     display: flex;
     align-items: center;
@@ -242,7 +234,6 @@ button.active-toggle .line-btn:nth-child(3) {
     text-align: center;
     padding: 20px 60px;
     width: 100%;
-
   }
 
   .nav-menu-mobile a {
@@ -323,7 +314,7 @@ button.active-toggle .line-btn:nth-child(3) {
 .sorteios-sec {
   /* height: 100px; */
   position: relative;
-  background-color: rgb(226, 224, 224);
+  background-color: var(--light-grey);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -334,6 +325,7 @@ button.active-toggle .line-btn:nth-child(3) {
 .sorteios-title {
   margin-bottom: 30px;
   text-align: center;
+  color: var(--dark-green);
 }
 
 .sorteios {
@@ -359,7 +351,7 @@ button.active-toggle .line-btn:nth-child(3) {
 .promo-card {
   width: 300px;
   max-height: 350px;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 6px;
   -webkit-box-shadow: 10px 10px 25px -18px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 10px 10px 25px -18px rgba(0, 0, 0, 0.6);
@@ -392,7 +384,7 @@ h3 {
   cursor: pointer;
   position: absolute;
   right: 0;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 10px 15px;
   /* padding: 5px; */
 }
@@ -400,7 +392,7 @@ h3 {
 /* SUBMITA-SEC */
 
 .submita-sec {
-  background-color: green;
+  background-color: var(--lighter-green);
   position: relative;
   display: flex;
   justify-content: center;
@@ -411,7 +403,7 @@ h3 {
 }
 
 #submita-text {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   margin-bottom: 25px;
 }
@@ -426,7 +418,7 @@ h3 {
   /* border: 1px solid white; */
   padding-left: 10px;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: var(--white);
   /* margin: 20px; */
 }
 
@@ -443,7 +435,7 @@ h3 {
 
 .send-btn {
   padding: 20px;
-  color: white;
+  color: var(--white);
   outline: none;
   border: none;
   font-size: 18px;
