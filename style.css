@@ -356,6 +356,11 @@ button.active-toggle .line-btn:nth-child(3) {
   -webkit-box-shadow: 10px 10px 25px -18px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 10px 10px 25px -18px rgba(0, 0, 0, 0.6);
   box-shadow: 10px 10px 25px -18px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+}
+
+.promo-card:hover {
+  transform: scale(1.1);
 }
 
 .name-and-notif {
